@@ -21,7 +21,7 @@ frekuensi_tinggi = group_into_intervals(tinggi_badan, interval_size)
 # Menggunakan bins yang sesuai dengan interval
 bins = np.arange(min(tinggi_badan) // interval_size * interval_size,
                  (max(tinggi_badan) // interval_size + 2) * interval_size, interval_size)  # Mengubah menjadi +2
-plt.hist(tinggi_badan, bins=bins, edgecolor='black', alpha=0.7, align='mid')  # Align diubah menjadi 'mid'
+plt.hist(tinggi_badan, bins=bins, alpha=0.7, align='mid', label='Data')  # Align diubah menjadi 'mid'
 plt.xlabel('Interval Tinggi Badan (cm)')
 plt.ylabel('Frekuensi')
 plt.title('Histogram Tinggi Badan')
@@ -31,7 +31,7 @@ mu, std = np.mean(tinggi_badan), np.std(tinggi_badan)
 x = np.linspace(min(tinggi_badan), max(tinggi_badan), 100)
 pdf = norm.pdf(x, mu, std)
 
-plt.plot(x, pdf * len(tinggi_badan) * interval_size, color='red', label='Kurva PDF')
+plt.plot(x, pdf * len(tinggi_badan) * interval_size, color='red', label='PDF (Normal Distribution)')
 plt.xlabel('Tinggi Badan (cm)')
 plt.ylabel('Frekuensi')
 plt.title('Histogram dan Kurva PDF Tinggi Badan')

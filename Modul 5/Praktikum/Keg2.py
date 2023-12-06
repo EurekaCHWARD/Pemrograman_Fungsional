@@ -23,7 +23,7 @@ pendapatan_produk = list(map(lambda tup: (tup[0], tup[1] * tup[2]), data_transak
 # TODO 4: Tambahkan bar chart untuk menyajikan pendapatan produk
 produk, pendapatan = zip(*pendapatan_produk)
 plt.subplot(1, 2, 2)
-plt.bar(produk, pendapatan, color='blue')
+plt.bar(produk, pendapatan, color=(0.5, 0.7, 1, 1))
 plt.xlabel('Produk')
 plt.ylabel('Pendapatan')
 plt.title('Pendapatan Produk')
