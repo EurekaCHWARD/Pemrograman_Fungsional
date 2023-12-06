@@ -31,7 +31,3 @@ plt.title('Pendapatan Produk')
 # Tampilkan kedua subplot secara bersamaan
 plt.tight_layout()
 plt.show()
-
-'''Subplot pertama memberikan gambaran visual tentang bagaimana harga produk berkaitan dengan jumlah produk yang terjual, 
-sementara subplot kedua memberikan informasi tentang pendapatan yang dihasilkan oleh setiap produk. Dengan menggunakan plt.tight_layout(), 
-tata letak antara kedua subplot disesuaikan untuk memastikan tampilan yang baik dan rapi.'''
