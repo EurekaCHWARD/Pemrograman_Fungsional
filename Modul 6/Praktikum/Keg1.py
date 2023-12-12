@@ -45,3 +45,5 @@ draw.text((text_x, text_y), text, font=font, fill="white")
 # TODO 6: Simpan gambar hasil edit
 save_path = r"D:\Eureka\Semester5\Fungsional\Modul 6\Assets\Hasil\tugas_praktikum_enam.png"
 result_image.save(save_path)
+
+result_image.show()
