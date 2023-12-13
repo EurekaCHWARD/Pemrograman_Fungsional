@@ -5,7 +5,7 @@ image_path = r"D:\Eureka\Semester5\Fungsional\Modul 6\Assets\Images\Drone.jpg"  
 image = Image.open(image_path)
 
 # TODO 2: Ubah tingkat kecerahan (brightness) dan kontras (contrast)
-brightness_factor = 1.5
+brightness_factor = 0.5
 contrast_factor = 1.2
 
 brightness_enhancer = ImageEnhance.Brightness(image)
