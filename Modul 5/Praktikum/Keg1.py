@@ -18,5 +18,5 @@ plt.title('Diagram Batang Nilai Ujian Mahasiswa')
 plt.xticks(rotation=45, ha="right")
 plt.axhline(y=rata_rata, color='r', linestyle='--', label=f'Rata-rata: {rata_rata:.2f}')
 plt.legend()
-plt.tight_layout()  # Menyesuaikan tata letak untuk menghindari tumpang tindih
+plt.tight_layout()
 plt.show()
