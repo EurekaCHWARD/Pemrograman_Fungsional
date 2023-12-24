@@ -25,7 +25,7 @@ final_overlay = contrast_enhancer.enhance(contrast_factor)
 
 result_image = Image.new("RGB", background_image.size, (0, 0, 0))
 
-position = (50, 50)
+position = (500, 150)
 result_image.paste(background_image, (0, 0))
 result_image.paste(final_overlay, position)
 
